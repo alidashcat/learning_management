@@ -5,7 +5,7 @@
     <% end %>
 
     <% if @course.image.present? %>
-      <%= image_tag @course.image, class: "w-full rounded-t" %>
+      <%= image_tag @course.image, class: "w-full rounded mb-6" %>
     <% else %>
       <%= image_tag("https://via.placeholder.com/300")  %>
     <% end %>
