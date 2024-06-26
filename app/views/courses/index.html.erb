@@ -5,12 +5,9 @@
 
   <% content_for :title, "Courses" %>
 
-  <div id="courses" class="min-w-full">
+  <div id="courses" class="min-w-full flex flex-wrap justify-center gap-14 pb-6">
     <% @courses.each do |course| %>
       <%= render course %>
-      <p>
-        <%= link_to "Show this course", course, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-      </p>
     <% end %>
   </div>
 </div>
